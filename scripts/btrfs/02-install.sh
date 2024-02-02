@@ -44,9 +44,9 @@ EOF
 
 # Prepare locales and keymap
 print "Prepare locales and keymap"
-echo "KEYMAP=fr" > /mnt/etc/vconsole.conf
-sed -i 's/#\(fr_FR.UTF-8\)/\1/' /mnt/etc/locale.gen
-echo 'LANG="fr_FR.UTF-8"' > /mnt/etc/locale.conf
+echo "KEYMAP=us" > /mnt/etc/vconsole.conf
+sed -i 's/#\(en_US.UTF-8\)/\1/' /mnt/etc/locale.gen
+echo 'LANG="en_US.UTF-8"' > /mnt/etc/locale.conf
 
 # Prepare initramfs
 print "Prepare initramfs"
