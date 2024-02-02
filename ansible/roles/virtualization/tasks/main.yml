@@ -8,7 +8,9 @@
       - ebtables
       - dnsmasq
       - ovmf
-      - vagrant
+      - podman
+      - distrobox
+      - incus
   notify: restart libvirt
 
 - name: add user to libvirt group
