@@ -93,7 +93,7 @@
     shell: '{{shell}}'
 
 - name: set timezone
-  shell: timedatectl set-timezone Europe/Paris
+  shell: timedatectl set-timezone America/Chicago
 
 - name: set ntp
   shell: timedatectl set-ntp true
