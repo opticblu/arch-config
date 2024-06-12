@@ -5,7 +5,6 @@
       - plasma-desktop
       - dolphin
       - konsole
-      - appstream-qt6
       - xdg-user-dirs
       - xdg-desktop-portal-kde
     state: present
