@@ -5,7 +5,7 @@
       - qemu-base
       - libvirt
       - virt-manager
-      - ebtables
+      - nftables
       - dnsmasq
       - ovmf
       - podman
@@ -17,6 +17,12 @@
   user:
     name: '{{user}}'
     groups: libvirt
+    append: yes
+
+- name: add user to incus group
+  user:
+    name: '{{user}}'
+    groups: incus-admin
     append: yes
 
 - name: enable nested virtualization
