@@ -18,7 +18,6 @@
     state: present
     remote: flathub
   loop:
-    - com.spotify.Client
     - com.vscodium.codium
     #- com.microsoft.Teams
 
