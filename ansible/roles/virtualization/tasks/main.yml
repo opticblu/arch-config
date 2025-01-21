@@ -5,7 +5,7 @@
       - qemu-base
       - libvirt
       - virt-manager
-      - nftables
+      - ipables-nft
       - dnsmasq
       - ovmf
       - podman
