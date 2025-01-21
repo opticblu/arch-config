@@ -21,12 +21,6 @@
     - com.vscodium.codium
     #- com.microsoft.Teams
 
-- name: Install flatpak beta packages
-  community.general.flatpak:
-    name: '{{ item }}'
-    state: present
-    remote: flathub-beta
-
 #- name: Override Teams perms
 #  shell: |
 #    flatpak override com.microsoft.Teams \
