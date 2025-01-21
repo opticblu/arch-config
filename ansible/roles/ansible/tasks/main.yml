@@ -15,20 +15,3 @@
       line: 'PIPX_BIN_DIR=/usr/local/bin'
     - regexp: '^PIPX_HOME='
       line: 'PIPX_HOME=/opt/pipx'
-
-- name: install ansible
-  community.general.pipx:
-    name: ansible
-    install_deps: yes
-    state: install
-    system_site_packages: yes
-
-- name: install ansible
-  community.general.pipx:
-    name: ansible
-    state: inject
-    inject_packages:
-      - pywinrm
-      - requests-credssp
-      - dnspython
-      - pyvmomi
