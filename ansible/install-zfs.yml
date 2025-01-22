@@ -31,6 +31,7 @@
     - { role: ansible, tags: ansible }
     - { role: containers, tags: containers }
     - { role: recovery, tags: recovery }
+    - { role: firejail, tags: firejail }
     - { role: zfs, tags: zfs }
     - { role: zram, tags: zram }
     - { role: printers, tags: printers }
