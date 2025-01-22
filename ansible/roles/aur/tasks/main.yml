@@ -8,6 +8,6 @@
 - name: install AUR helper
   become: no
   aur:
-    name: trizen
+    name: yay
     use: makepkg
     skip_installed: true
